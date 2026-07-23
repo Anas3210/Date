@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+}
+
+h1 { color: #ff1493; font-size: 2.8rem; margin-bottom: 10px; }
+h2 { color: #333; margin-bottom: 25px; }
+
+.buttons button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+#yesBtn { background: #ff1493; color: white; }
+#noBtn { background: #ddd; color: #333; }
+
+button {
+    background: #ff69b4;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+input, select {
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
