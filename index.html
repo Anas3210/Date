@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💖 Date Invitation 💖</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+<div id="page1" class="card">
+
+<h1>💖 Sweety 💖</h1>
+
+<h2>Will you go on a date with me?</h2>
+
+<p>
+Made with ❤️ by
+<br>
+<b>Mehedi Hasan Tusar</b>
+</p>
+
+<div class="buttons">
+
+<button id="yesBtn">
+YES ❤️
+</button>
+
+<button id="noBtn">
+NO 🙈
+</button>
+
+</div>
+
+</div>
+
+<div id="page2" class="card hidden">
+
+<h2>Select Date 📅</h2>
+
+<input type="date" id="date">
+
+<button onclick="nextPage(3)">
+Next →
+</button>
+
+</div>
+
+<div id="page3" class="card hidden">
+
+<h2>Select Time ⏰</h2>
+
+<input type="time" id="time">
+
+<button onclick="nextPage(4)">
+Next →
+</button>
+
+</div>
+
+<div id="page4" class="card hidden">
+
+<h2>Choose Restaurant 🍽️</h2>
+
+<select id="restaurant">
+
+<option>Lapino</option>
+
+<option>Deshi Bhoj</option>
+
+<option>Pizza Times</option>
+
+</select>
+
+<button onclick="nextPage(5)">
+Next →
+</button>
+
+</div>
+
+<div id="page5" class="card hidden">
+
+<h2>Choose Foods 🍕</h2>
+
+<label>
+<input type="checkbox" id="ice">
+🍨 Ice Cream (Required)
+</label>
+
+<label>
+<input type="checkbox">
+🍕 Pizza
+</label>
+
+<label>
+<input type="checkbox">
+🍔 Burger
+</label>
+
+<label>
+<input type="checkbox">
+🍝 Pasta
+</label>
+
+<label>
+<input type="checkbox">
+🍗 Fried Chicken
+</label>
+
+<label>
+<input type="checkbox">
+🥤 Cold Coffee
+</label>
+
+<button id="finish">
+Finish ❤️
+</button>
+
+</div>
+
+<div id="page6" class="card hidden">
+
+<h1>🎉 YAY!! 🎉</h1>
+
+<h2>Thank You Sweety ❤️</h2>
+
+<p>
+
+I promise this will be
+one of the sweetest memories
+of our lives.
+
+Thank you for saying YES.
+
+See You Soon ❤️
+
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
